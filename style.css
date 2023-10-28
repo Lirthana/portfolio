@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  .row {
+    margin-top: 50px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  body {
+    background-color: rgb(0, 4, 22);
+  }
+  .navbar-brand {
+    color: rgb(255, 53, 255);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: system-ui;
+  }
+  .nav > li > a {
+    color: darkgray;
+    font-weight: bold;
+  }
+  .nav > li > a:focus,
+  .nav > li > a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+  }
+  .profile-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+  }
+  .profile-name > h1 {
+    font-family: system-ui;
+    color: white;
+    background-image: linear-gradient(
+      to right,
+      rgb(225, 0, 255),
+      rgb(0, 37, 248)
+    );
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  .profile-name > p {
+    color: white;
+    font-weight: bold;
+  }
+  .profile-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .profile-btns > a {
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+  }
+  .btn-res {
+    background-color: blue;
+    border-radius: 15px;
+  }
+  .btn-con {
+    background-color: rgb(255, 69, 255);
+    border-radius: 15px;
+  }
+  .profile-btns > .btn-success:hover {
+    background-color: rgb(68, 226, 68);
+  }
+  .img-bg-cont {
+    width: 290px;
+    height: 290px;
+    border-radius: 100%;
+    padding: 5px;
+    background-image: linear-gradient(rgb(225, 0, 255), rgb(0, 37, 248));
+  }
+  .img-cont {
+    width: 280px;
+    height: 280px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .img-cont > img {
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    top: -130px;
+    left: -10px;
+  }
+  .profile-photo {
+    position: relative;
+  }
+  .profile-photo > .p-icons-l > .github-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 99;
+    top: 0px;
+    left: 20px;
+  }
+  .profile-photo > a.p-icons-l > .linkedin-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 99;
+    top: 75px;
+    left: -30px;
+  }
+  .profile-photo > .p-icons-l > .fa-hackerrank {
+    position: absolute;
+    z-index: 99;
+    font-size: 40px;
+    color: rgb(0, 255, 0);
+    background-color: black;
+    border-radius: 100%;
+    padding: 5px;
+    bottom: 75px;
+    left: -30px;
+  }
+  .profile-photo > .p-icons-l > .fa-instagram {
+    position: absolute;
+    z-index: 99;
+    font-size: 40px;
+    color: white;
+    background-image: linear-gradient(
+      to right top,
+      rgb(0, 37, 248),
+      rgb(225, 0, 255)
+    );
+    border-radius: 100%;
+    padding: 5px;
+    bottom: 0px;
+    left: 20px;
+  }
+  .profile-photo > .p-icons-l > img:hover,
+  .profile-photo > .p-icons-r > img:hover {
+    width: 60px;
+    height: 50px;
+  }
+  .profile-photo > .p-icons-l > i:hover,
+  .profile-photo > .p-icons-r > i:hover {
+    font-size: 50px;
+  }
+  
+  .profile-photo > .p-icons-r > .fa-python {
+    position: absolute;
+    z-index: 99;
+    font-size: 30px;
+    color: gold;
+    border-radius: 100%;
+    padding: 5px;
+    top: -10px;
+    right: 20px;
+  }
+  .profile-photo > .p-icons-r > .fa-html5 {
+    position: absolute;
+    z-index: 99;
+    font-size: 30px;
+    color: tomato;
+    border-radius: 100%;
+    padding: 5px;
+    top: 30px;
+    right: -20px;
+  }
+  .profile-photo > .p-icons-r > .fa-css3-alt {
+    position: absolute;
+    z-index: 99;
+    font-size: 30px;
+    color: deepskyblue;
+    border-radius: 100%;
+    padding: 5px;
+    top: 90px;
+    right: -40px;
+  }
+  .profile-photo > .p-icons-r > .fa-js {
+    position: absolute;
+    z-index: 99;
+    font-size: 30px;
+    color: yellow;
+    border-radius: 100%;
+    padding: 5px;
+    bottom: 90px;
+    right: -40px;
+  }
+  .profile-photo > .p-icons-r > .fa-bootstrap {
+    position: absolute;
+    z-index: 99;
+    font-size: 30px;
+    color: deeppink;
+    border-radius: 100%;
+    padding: 5px;
+    bottom: 30px;
+    right: -30px;
+  }
+  .profile-photo > .p-icons-r > .fa-git-alt {
+    position: absolute;
+    z-index: 99;
+    font-size: 30px;
+    color: tomato;
+    border-radius: 100%;
+    padding: 5px;
+    bottom: -10px;
+    right: 20px;
+  }
+  
+  /* About */
+  
+  .about > div > h1 {
+    text-align: center;
+    color: gray;
+    font-family: system-ui;
+  }
+  .about > div > p {
+    color: white;
+    text-align: justify;
+    font-size: 18px;
+  }
+  
+  /* Resume */
+  
+  .resume > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    width: 200px;
+    height: 100px;
+    margin: auto;
+  }
+  .resume > div > h1 {
+    text-align: center;
+    color: gray;
+    font-family: system-ui;
+    align-self: center;
+    margin: 0;
+  }
+  .btn-download {
+    margin-top: 10px;
+    background-image: linear-gradient(
+      to right,
+      rgb(0, 37, 248),
+      rgb(225, 0, 255)
+    );
+    border: none;
+    border-radius: 15px;
+  }
+  .btn-download > a,
+  .btn-download > a > i {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .btn-download:hover {
+    background-image: linear-gradient(
+      to right,
+      rgb(43, 73, 245),
+      rgb(223, 43, 247)
+    );
+    color: white;
+    text-decoration: none;
+  }
+  
+  .resume-row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  /* Educate */
+  
+  .educate {
+    width: 100%;
+  }
+  .educate > h1 {
+    text-align: center;
+    color: gray;
+    font-family: system-ui;
+  }
+  .edu-childs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .edu-childs > div > div > h4 {
+    font-weight: bold;
+  }
+  .edu-childs > div > div > h4,
+  .edu-childs > div > div > p {
+    margin: 0;
+    padding: 10px;
+    color: aliceblue;
+  }
+  .edu-childs > div > div > p {
+    font-weight: bold;
+  }
+  .edu1,
+  .edu2,
+  .edu3 {
+    width: 90%;
+    border: 1px solid darkgray;
+    border-radius: 15px;
+    margin-top: 25px;
+  }
+  .edu1-h,
+  .edu2-h,
+  .edu3-h {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    background-image: linear-gradient(
+      to right,
+      rgb(223, 43, 247),
+      rgb(43, 73, 245)
+    );
+    color: white;
+    margin: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-weight: bold;
+  }
+  .marks {
+    font-size: 20px;
+    color: aqua;
+  }
+  /* Projects */
+  
+  .project {
+    width: 100%;
+  }
+  
+  .project > h1 {
+    text-align: center;
+    color: gray;
+    font-family: system-ui;
+  }
+  .pro-child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .pro1,
+  .pro2 {
+    width: 100%;
+    border: 1px solid darkgray;
+    border-radius: 15px;
+    margin-top: 25px;
+  }
+  
+  .pro1 > h4,
+  .pro2 > h4 {
+    background-image: linear-gradient(
+      to right,
+      rgb(223, 43, 247),
+      rgb(43, 73, 245)
+    );
+    color: white;
+    margin: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .pro1 > ul > li,
+  .pro2 > ul > li {
+    color: white;
+    margin-left: 25px;
+    padding: 15px;
+    font-size: 17px;
+  }
+  
+  /* Skills */
+  
+  .skills > h1 {
+    text-align: center;
+    color: gray;
+    font-family: system-ui;
+  }
+  .skill-emts {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 50px;
+  }
+  .skill-emts > a > i,
+  .skill-emts > a {
+    font-size: 50px;
+  }
+  
+  /* Contact */
+  
+  .form-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+  .form-body > div {
+    width: 100%;
+    padding: 10px;
+  }
+  .form-lt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .form-lt > div > input {
+    height: 50px;
+    border-radius: 15px;
+    background-color: rgb(0, 4, 22);
+    color: white;
+  }
+  #msg {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid white;
+    background-color: rgb(0, 4, 22);
+    color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  .con-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .con-form > h1 {
+    text-align: center;
+    color: gray;
+    font-family: system-ui;
+  }
+  .con-form > button {
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    align-self: center;
+    border: none;
+    background-color: red;
+    border-radius: 10px;
+  }
+  .con-form > .btn-danger:hover {
+    background-color: rgb(68, 226, 68);
+    border: none;
+  }
+  
+  @media (max-width: 700px) {
+    .profile-flexbox {
+      flex-direction: column;
+    }
+    .form-body {
+      flex-direction: column;
+    }
+    .form-body > div {
+      padding: 0 10px;
+    }
+    .resume-row1 {
+      flex-direction: column;
+    }
+    .edu1,
+    .edu2,
+    .edu3 {
+      width: 100%;
+    }
+  }
+  
